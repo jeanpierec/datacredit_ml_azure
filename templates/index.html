@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model Prediction</title>
+</head>
+<body>
+    <h1>Model Prediction</h1>
+    <form action="/predict" method="post">
+        <!-- Agrega campos de entrada para cada característica -->
+        {% for feature in ['GENDER', 'Car_Owner', 'Propert_Owner', 'CHILDREN',
+                           'Annual_income', 'Type_Income', 'EDUCATION', 'Marital_status',
+                           'Housing_type', 'Birthday_count', 'Employed_days', 'Mobile_phone',
+                           'Work_Phone', 'Phone', 'Type_Occupation', 'Family_Members'] %}
+            <label for="{{ feature }}">{{ feature }}:</label>
+            <input type="text" name="{{ feature }}" required><br>
+        {% endfor %}
+        <input type="submit" value="Predict">
+    </form>
+
+    <!-- Muestra la predicción aquí -->
+    {% if prediction is defined %}
+        <p>Model Prediction: {{ prediction }}</p>
+    {% endif %}
+</body>
+</html>
