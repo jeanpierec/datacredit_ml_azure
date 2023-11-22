@@ -8,7 +8,7 @@
 <body>
     <h1>Model Prediction</h1>
     <form action="/predict" method="post">
-        <!-- Agrega campos de entrada para cada característica -->
+        <!-- campos de entrada para cada característica -->
         {% for feature in ['GENDER', 'Car_Owner', 'Propert_Owner', 'CHILDREN',
                            'Annual_income', 'Type_Income', 'EDUCATION', 'Marital_status',
                            'Housing_type', 'Birthday_count', 'Employed_days', 'Mobile_phone',
@@ -19,7 +19,7 @@
         <input type="submit" value="Predict">
     </form>
 
-    <!-- Muestra la predicción aquí -->
+    <!-- Muestra la predicción -->
     {% if prediction is defined %}
         <p>Model Prediction: {{ prediction }}</p>
     {% endif %}
