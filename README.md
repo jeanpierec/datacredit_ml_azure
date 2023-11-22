@@ -25,6 +25,7 @@ For this project we'll use this dataset: https://www.kaggle.com/datasets/rohitud
 4. Access the web application in your browser and enter numerical values for the specified features. Submit the form to see the predicted label.
 
 The Docker Image will be pull in: https://hub.docker.com/r/jeanpierec/credit-forest-predictor
+For the video demostration: https://youtu.be/HTrUGKPJTXo
 
 *_(to Harry and Hermione) Mysterious thing, time. Powerful, and when meddled with, dangerous. Sirius Black is in the topmost cell of the dark tower. You know the laws, Miss Granger. You must not be seen. And you would do well, I feel, to return before this last chime. If not, the consequences are too ghastly to discuss. If you succeed tonight, more than one innocent life may be spared. Three turns, should do it, I think. Oh, and by the way. When in doubt, I find retracing my steps to be a wise place to begin. Good luck._*
 
